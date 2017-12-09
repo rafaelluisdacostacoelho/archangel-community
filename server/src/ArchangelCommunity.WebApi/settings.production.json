@@ -1,0 +1,37 @@
+﻿{
+    "ApplicationInsights": {
+        "InstrumentationKey": ""
+    },
+    "ConnectionStrings": {
+        "DefaultConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+    },
+    "Facebook": {
+
+    },
+    "Google": {
+        "ApiKey": "AIzaSyAOlklMiyOfRLamNa3Xxi1G-jdUCzm9GUY",
+        "OAuth2": {
+            "ClientID": "59190747655-udet3706jft7vetjqlep54qc2tol210a.apps.googleusercontent.com"
+        }
+    },
+    "Logging": {
+        "IncludeScopes": false,
+        "LogLevel": {
+            "Default": "Debug",
+            "Microsoft": "Information",
+            "System": "Information"
+        }
+    },
+    "Recaptcha": {
+        "SecretKey": "6LdPBA4UAAAAAGsx-mdP_NH-QrlPqZoBiyEqYK2i",
+        "SiteKey": "6LdPBA4UAAAAAE7FZJVL0Lc6NdrndBa5hzMVVfMw"
+    },
+    "SendGrid": {
+        "Key": "F9sGp7NySUaFc4NoPKOskg",
+        "User": ""
+    },
+    "Twilio": {
+        "AccountSID": "ACc29f6bc0a04ba24beb16edc3d2d37339",
+        "AuthToken": "dd322e5aa08f17b41eb5ead52ec44d6e"
+    }
+}

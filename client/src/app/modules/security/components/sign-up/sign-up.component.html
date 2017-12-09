@@ -1,0 +1,32 @@
+<div fxLayout="row">
+  <div fxFlex="35"></div>
+  <div fxFlex="30">
+    <form (ngSubmit)="signUp($event)" #form="ngForm">
+      <md-card>
+        <md-card-title-group>
+          <md-card-title>SIGN UP</md-card-title>
+          <md-card-subtitle>Enter your credentials to create your account!</md-card-subtitle>
+        </md-card-title-group>
+        <md-card-content>
+          <md-input-container>
+            <input mdInput [(ngModel)]="model.username" name="username" placeholder="Username" type="text">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput [(ngModel)]="model.email" name="email" placeholder="Email" type="email">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput [(ngModel)]="model.password" name="password" placeholder="Password" type="password">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput [(ngModel)]="model.passwordConfirmation" name="passwordConfirmation" placeholder="Confirm the password" type="password">
+          </md-input-container>
+        </md-card-content>
+        <md-card-actions>
+          <button md-raised-button color="primary" type="submit">Register</button>
+          <a md-button [routerLink]="['../sign-in']">You already have an account?</a>
+        </md-card-actions>
+      </md-card>
+    </form>
+  </div>
+  <div fxFlex="35"></div>
+</div>

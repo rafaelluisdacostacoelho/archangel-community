@@ -1,0 +1,32 @@
+<div fxLayout="row">
+  <div fxFlex="35"></div>
+  <div fxFlex="30">
+    <form (ngSubmit)="signIn($event)" #form="ngForm">
+      <md-card>
+        <md-card-title-group>
+          <md-card-title>SIGN IN</md-card-title>
+          <md-card-subtitle>Enter your credentials to gain system access!</md-card-subtitle>
+        </md-card-title-group>
+        <md-card-content>
+          <md-input-container>
+            <input mdInput required [(ngModel)]="model.username" name="username" placeholder="Username">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput required [(ngModel)]="model.password" name="password" placeholder="Password" type="password">
+          </md-input-container>
+          <md-checkbox [(ngModel)]="model.rememberMe" name="rememberMe" [checked]="true" color="primary">
+            Keep me signed!
+          </md-checkbox>
+        </md-card-content>
+        <md-card-actions>
+          <button md-raised-button color="primary" type="submit">Sign in</button>
+          <button md-button [routerLink]="['../sign-up']" type="button">Have no account yet?</button>
+        </md-card-actions>
+        <md-card-content>
+          <a [routerLink]="['../forgot-password']">Forgoted your password?</a>
+        </md-card-content>
+      </md-card>
+    </form>
+  </div>
+  <div fxFlex="35"></div>
+</div>

@@ -1,0 +1,11 @@
+md-input-container {
+    width: 100%;
+}
+
+.ng-valid[required], .ng-valid.required .md-input-underline {
+  border-color: #42A948 !important;
+}
+
+.ng-invalid:not(form) .md-input-underline {
+  border-color: #a94442 !important;
+}

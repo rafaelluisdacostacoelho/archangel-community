@@ -1,0 +1,49 @@
+﻿<div class="slide slide__content-1">
+    <div layout="row full-height">
+        <div flex="70"></div>
+        <div flex="20" class="full-height">
+            <div class="login-box vertical-align-middle-relative">
+                <div class="login-header">
+                    <span>Sign in with you account</span>
+                    <!-- construir um componente de ajuda -->
+                </div>
+                <div class="login-body">
+                    <form (ngSubmit)="onSubmit()" [ngFormModel]="loginControlGroup" #loginForm="ngForm">
+                        <div>
+                            <div class="arch-input-container">
+                                <input type="text" name="UserName" ngControl="UserName" [(ngModel)]="loginViewModel.UserName" placeholder="Enter your username"
+                                    required>
+                                <hr>
+                                <label for="UserName">Username</label>
+                            </div>
+                            <br />
+                            <div md-messages="UserName">
+                                <div md-message="required">Your username is required</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="arch-input-container">
+                                <input type="text" name="Password" ngControl="Password" [(ngModel)]="loginViewModel.Password" placeholder="Enter your password"
+                                    required>
+                                <hr>
+                                <label for="Password">Password</label>
+                            </div>
+                            <br />
+                            <div md-messages="Password">
+                                <div md-message="required">Your password is required</div>
+                            </div>
+                        </div>
+                        <!--
+            <md-input-container class="md-block">
+                <md-checkbox [(checked)]="loginViewModel.RememberMe" aria-label="Not expire" class="md-primary">Remember me</md-checkbox>
+            </md-input-container>
+            -->
+                        <button type="submit" md-raised-button class="md-raised" [disabled]="!loginForm.form.valid">Login</button>
+                        <a routerLink="account/forgot-password">Forgot your password?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div flex="10"></div>
+    </div>
+</div>

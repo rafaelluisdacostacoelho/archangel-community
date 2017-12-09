@@ -1,0 +1,63 @@
+﻿.slide {
+  position: relative;
+  
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+  }
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover; 
+}
+
+.slide__content-1 {
+  background-image: url("dist/assets/images/background/space-041.jpg");
+	background-attachment: fixed;
+}
+
+archangel-login {
+  
+  display: flex;
+  align-items: center;
+
+  & .login-box {
+    
+    background-color: transparent;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    
+    & .login-header {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      
+      margin: auto auto;
+      border: {
+        top-left-radius: 5px;
+        top-right-radius: 5px; 
+      };
+    }
+
+    & .login-body {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      
+      border: {
+        bottom-left-radius: 5px;
+        bottom-right-radius: 5px; 
+      };
+    }
+  }
+}
+
+.full-height {
+  height: 100vh;
+}

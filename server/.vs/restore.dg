@@ -1,0 +1,5 @@
+#:C:\Git\ArchangelCommunity\src\ArchangelCommunity.WebApi\ArchangelCommunity.WebApi.xproj
+C:\Git\ArchangelCommunity\src\ArchangelCommunity.WebApi\ArchangelCommunity.WebApi.xproj|C:\Git\ArchangelCommunity\src\ArchangelCommunity.Application\ArchangelCommunity.Application.xproj
+C:\Git\ArchangelCommunity\src\ArchangelCommunity.Application\ArchangelCommunity.Application.xproj|C:\Git\ArchangelCommunity\src\ArchangelCommunity.Domain\ArchangelCommunity.Domain.xproj
+C:\Git\ArchangelCommunity\src\ArchangelCommunity.Application\ArchangelCommunity.Application.xproj|C:\Git\ArchangelCommunity\src\ArchangelCommunity.Infrastructure\ArchangelCommunity.Infrastructure.xproj
+C:\Git\ArchangelCommunity\src\ArchangelCommunity.Infrastructure\ArchangelCommunity.Infrastructure.xproj|C:\Git\ArchangelCommunity\src\ArchangelCommunity.Domain\ArchangelCommunity.Domain.xproj

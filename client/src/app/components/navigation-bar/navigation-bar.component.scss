@@ -1,0 +1,39 @@
+$transition-duration: .5s;
+$box-shadow: 0 2px 20px rgba(0, 0, 0, .7);
+
+:host {
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+    
+    padding: 20px 0;
+    -webkit-transition: $transition-duration;
+    transition: $transition-duration;
+
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+};
+:host > * {
+    padding: 15px 0;
+    font-size: 24pt;
+}
+:host(.collapsed) {
+    padding: 5px 0;
+
+    font-size: 16pt;
+
+    -webkit-transition: $transition-duration;
+    transition: $transition-duration;
+
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+:host(.primary-color) {
+    background: rgba(255, 255, 255, 1);
+};
+:host(.secondary-color) {
+    background: rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6664DC59-8554-44CF-98ED-6DF0CAF6E537}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{562CA050-53CC-4002-9EBB-A5F7DD8FEE7B}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ArchangelCommunity.WebApi", "src\ArchangelCommunity.WebApi\ArchangelCommunity.WebApi.xproj", "{DB9BBDEA-E4E9-4B87-93D2-3EC3784C4ED5}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ArchangelCommunity.Infrastructure", "src\ArchangelCommunity.Infrastructure\ArchangelCommunity.Infrastructure.xproj", "{74F8A850-AFD6-4CB0-93AC-15FE78E53EE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation", "1. Presentation", "{F322AE46-DA71-4118-98F6-325CB87C48BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Domain", "3. Domain", "{2CCBE1E8-52A0-47DB-98E4-E145FD961A95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infrastructure", "4. Infrastructure", "{2E02E4E0-FE1E-49E5-A72D-F711A9223724}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application", "2. Application", "{459CA1A7-3E99-4026-85B4-E20AF6994670}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ArchangelCommunity.Application", "src\ArchangelCommunity.Application\ArchangelCommunity.Application.xproj", "{53A03561-030C-4642-9DFF-736567E43FDF}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ArchangelCommunity.Domain", "src\ArchangelCommunity.Domain\ArchangelCommunity.Domain.xproj", "{04518A7A-8B7E-4BBB-ACE9-AA6E47B66E2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB9BBDEA-E4E9-4B87-93D2-3EC3784C4ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB9BBDEA-E4E9-4B87-93D2-3EC3784C4ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB9BBDEA-E4E9-4B87-93D2-3EC3784C4ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB9BBDEA-E4E9-4B87-93D2-3EC3784C4ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F8A850-AFD6-4CB0-93AC-15FE78E53EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F8A850-AFD6-4CB0-93AC-15FE78E53EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F8A850-AFD6-4CB0-93AC-15FE78E53EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F8A850-AFD6-4CB0-93AC-15FE78E53EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53A03561-030C-4642-9DFF-736567E43FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A03561-030C-4642-9DFF-736567E43FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A03561-030C-4642-9DFF-736567E43FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A03561-030C-4642-9DFF-736567E43FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04518A7A-8B7E-4BBB-ACE9-AA6E47B66E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04518A7A-8B7E-4BBB-ACE9-AA6E47B66E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04518A7A-8B7E-4BBB-ACE9-AA6E47B66E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04518A7A-8B7E-4BBB-ACE9-AA6E47B66E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB9BBDEA-E4E9-4B87-93D2-3EC3784C4ED5} = {F322AE46-DA71-4118-98F6-325CB87C48BA}
+		{74F8A850-AFD6-4CB0-93AC-15FE78E53EE9} = {2E02E4E0-FE1E-49E5-A72D-F711A9223724}
+		{F322AE46-DA71-4118-98F6-325CB87C48BA} = {6664DC59-8554-44CF-98ED-6DF0CAF6E537}
+		{2CCBE1E8-52A0-47DB-98E4-E145FD961A95} = {6664DC59-8554-44CF-98ED-6DF0CAF6E537}
+		{2E02E4E0-FE1E-49E5-A72D-F711A9223724} = {6664DC59-8554-44CF-98ED-6DF0CAF6E537}
+		{459CA1A7-3E99-4026-85B4-E20AF6994670} = {6664DC59-8554-44CF-98ED-6DF0CAF6E537}
+		{53A03561-030C-4642-9DFF-736567E43FDF} = {459CA1A7-3E99-4026-85B4-E20AF6994670}
+		{04518A7A-8B7E-4BBB-ACE9-AA6E47B66E2B} = {2CCBE1E8-52A0-47DB-98E4-E145FD961A95}
+	EndGlobalSection
+EndGlobal

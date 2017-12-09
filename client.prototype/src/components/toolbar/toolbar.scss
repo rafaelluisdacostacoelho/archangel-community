@@ -1,0 +1,56 @@
+﻿$transition-duration: .5s;
+$box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+$padding: 15px;
+
+archangel-toolbar {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    // TODO: Change to a responsive directive
+    archangel-toolbar-flex {
+        flex: 1 1 auto;
+    }
+    // TODO: Need a cleaning
+    archangel-toolbar-row {
+        display: flex;
+        box-sizing: border-box;
+
+        // Flexbox Vertical Alignment
+        flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+        padding: 1rem 0;
+    }
+    & .not-collapsed {
+        padding: 3rem 0;
+        -webkit-transition: $transition-duration; /* Safari */
+        transition: $transition-duration;
+
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
+    }
+    & .collapsed {
+        padding: 0rem 0;
+
+        -webkit-transition: $transition-duration; /* Safari */
+        transition: $transition-duration;
+
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
+    }
+    & .color-secondary {
+        background: rgba(255, 255, 255, 1);
+    }
+    & .color-primary {
+        background: rgba(255, 255, 255, 0.1);
+    };
+    & a {
+        padding-left: 15px;
+        padding-right: 15px;   
+    };
+};

@@ -1,0 +1,52 @@
+﻿@import "../../assets/styles/color/light-blue.scss";
+
+$size: 6em;
+
+.archangel-countdown {
+    text-align: center;
+    color: $color-200;
+    text-shadow: 0 0 $size/12 $color-200, 0 0 $size/8 $color-200;
+
+    &__row {
+        width: 100%;
+    };
+
+    &__column { 
+        display: inline-block;
+        text-align: center;
+    };
+
+    & .header {
+        font-size: $size/3.2;
+        color: $color-50;
+    };
+
+    & .ring {
+        width: $size;
+        height: $size;
+        box-shadow: 0 0 $size/16 $color-200 inset, 0 0 $size/8 $color-200 inset, 0 0 $size/6 $color-200, 0 0 $size/8 $color-200;
+        margin: $size/12;
+        text-align: center;
+
+        border: {
+            width: $size/12;
+            color: $color-50;
+            style: solid;
+            radius: 50%;
+        };      
+
+        & .time {
+            font-size: $size/3;
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        };
+    };
+
+    & .legend {
+        color: $color-200; 
+        font-size: $size/4.5;
+    };
+}

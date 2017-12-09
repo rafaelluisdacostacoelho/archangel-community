@@ -1,0 +1,29 @@
+{
+    "name": "@archangel/countdown",
+    "version": "1.0.0-alpha.1",
+    "description": "Archangel Countdown in Angular 2",
+    "main": "./countdown.js",
+    "typings": "./countdown.d.ts",
+    "homepage": "https://ArchangelCommunity@bitbucket.org/ArchangelCommunity/archangel-community.git#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://ArchangelCommunity@bitbucket.org/ArchangelCommunity/archangel-community.git"
+    },
+    "bugs": {
+        "type": "git",
+        "url": "https://ArchangelCommunity@bitbucket.org/ArchangelCommunity/archangel-community.git/issues"
+    },
+    "keywords": [
+        "angular",
+        "angular2",
+        "archangel",
+        "countdown",
+        "components"
+    ],
+    "license": "MIT",
+    
+    "peerDependencies": {
+        "@angular2/core": "2.0.0-rc.4",
+        "rxjs": "1.0.0-beta.6"
+    }
+}

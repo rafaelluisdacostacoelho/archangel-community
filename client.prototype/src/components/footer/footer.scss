@@ -1,0 +1,112 @@
+﻿@import "../../assets/styles/mixins.scss";
+
+$color: #42A5F5;
+
+archangel-footer {
+    color: $color;
+    
+    &-row {
+        padding: 2em;
+        background-image: url("dist/assets/images/background/space-025.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+        font-size: .8em;
+    };
+    
+    h4 {
+        font-size: 1.4em;
+    }
+
+    & .newsletter-box {
+        color: $color !important;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+    }
+
+    & .social-icon {
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+
+        font-size: 1.5em;
+        margin-right: 5px;
+        width: 40px;
+        height: 40px;
+        border-color: transparent;
+        
+        text-decoration: none !important;
+        text-align: center;
+        cursor: pointer;
+        
+        color: #FFFFFF !important;
+
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        
+        & * {
+            @include centralize;
+        }
+        &.social-icon-border{
+            border: #999 1px solid;
+            color: #565656;
+        }
+        &.social-facebook {
+            @include transition(background-color);
+            &:hover {
+                background-color: #3B5998;
+                border-color: #3B5998;
+                @include transition(background-color);
+            }
+        }
+        &.social-twitter {
+            @include transition(background-color);
+            &:hover {
+                background-color: #00ACEE;
+                border-color: #00ACEE;
+                @include transition(background-color);
+            }
+        }
+        &.social-google-plus {
+            @include transition(background-color);
+            &:hover {
+                background-color: #DD4B39;
+                border-color: #DD4B39;
+                @include transition(background-color);
+            }
+        }
+        &.social-linkedin {
+            @include transition(background-color);
+            &:hover {
+                background-color: #0E76A8;
+                border-color: #0E76A8;
+                @include transition(background-color);
+            }
+        }
+        &.social-rss {
+            @include transition(background-color);
+            &:hover {
+                background-color:#EE802F;
+                border-color: #EE802F;
+                @include transition(background-color);
+            }
+        }
+    }
+
+    // Hack: Waiting theme customization from angular2-material
+    & .md-input-placeholder {
+        color: rgb(255, 255, 255) !important;
+    }
+
+    & .md-input-underline {
+        border-top: 1px solid rgb(255, 255, 255) !important;
+
+        & .md-input-ripple {
+            background-color: rgb(255, 255, 255) !important;
+        }
+    }
+};

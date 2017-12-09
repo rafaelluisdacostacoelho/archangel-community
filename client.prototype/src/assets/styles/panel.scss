@@ -1,0 +1,91 @@
+﻿$body-color: #B3E5FC;
+$background-opacity: 0.8;
+$panel-border-radius: 0.4em;
+
+/* Panel Header */
+$header-background-gradient-1: rgba(2, 119, 189, $background-opacity); /* 0277BD */
+$header-background-gradient-2: rgba(3, 169, 224, $background-opacity); /* 03A9F4 */
+$header-background-gradient-3: rgba(129, 212, 250, 0.2); /* 81D4FA */
+
+/* Panel Body */
+$panel-body-background-color: rgba(0, 0, 0, 0.2);
+
+/* Panel Footer */
+$footer-background-color: rgba(2, 119, 189, $background-opacity);
+
+.panel {
+    position: relative;
+    margin: auto auto;
+    width: 50%;
+    border-radius: $panel-border-radius;
+
+    .panel-header {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        align-content: center;
+        text-align: center;
+        background: linear-gradient(45deg, $header-background-gradient-1, $header-background-gradient-2);
+        color: $body-color;
+
+        padding: {
+            top: 10px;
+            bottom: 10px;
+        }
+
+        border: {
+            top: {
+                left-radius: $panel-border-radius;
+                right-radius: $panel-border-radius;
+            }
+        }
+    }
+
+    .panel-body {
+        padding: 10px;
+        background: $panel-body-background-color;
+    }
+
+    .footer-bar {
+        width: 100%;
+        background-color: $panel-body-background-color;
+        text-align: center;
+        color: $body-color;
+
+        padding: {
+            top: 10px;
+            bottom: 10px;
+        }
+
+        border: {
+            bottom: {
+                left-radius: $panel-border-radius;
+                right-radius: $panel-border-radius;
+            }
+        }
+    }
+
+    /* Borda superior iluminada */
+    &:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 96%;
+        background: -webkit-linear-gradient(left, $header-background-gradient-1, $header-background-gradient-2 5%, #fff 20%, $header-background-gradient-3 70%);
+        top: 0;
+        left: 2%;
+    }
+
+    /* Efeito de brilho */
+    &:before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 0px;
+        display: block;
+        box-shadow: 0 0 6px 2px #fff;
+        border-radius: 50%;
+        top: 2px;
+        left: 23%;
+    }
+}

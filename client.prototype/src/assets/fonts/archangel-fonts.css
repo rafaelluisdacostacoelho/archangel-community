@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'archangel-fonts';
+  src:  url('archangel-fonts/archangel-fonts.eot?6fb7er');
+  src:  
+    url('archangel-fonts/archangel-fonts.eot?6fb7er#iefix') format('embedded-opentype'),
+    url('archangel-fonts/archangel-fonts.ttf?6fb7er') format('truetype'),
+    url('archangel-fonts/archangel-fonts.woff?6fb7er') format('woff'),
+    url('archangel-fonts/archangel-fonts.svg?6fb7er#archangel-fonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change archangel-fonts */
+  font-family: 'archangel-fonts' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google-plus:before {
+  content: "\ea8b";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-rss:before {
+  content: "\ea9b";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+

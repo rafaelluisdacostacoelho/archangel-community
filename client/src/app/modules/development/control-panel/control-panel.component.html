@@ -1,0 +1,38 @@
+<app-toaster-container></app-toaster-container>
+
+<div fxLayout="row">
+    <div fxFlex="20"></div>
+    <div fxFlex>
+
+        <md-card>
+            <md-card-title-group>
+                <md-card-title>DEVELOPMENT - CONTROL PANEL</md-card-title>
+            </md-card-title-group>
+            <md-card-content>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Functions</th>
+                        </tr>
+                    </thead>
+                </table>
+                <tr>
+                    <td>Seed the database</td>
+                    <td><button md-raised-button (click)="seed()" #seedDb>Execute</button></td>
+                </tr>
+                <tr>
+                    <td>Clear all data from the database</td>
+                    <td><button md-raised-button (click)="clear()" #clearDb>Execute</button></td>
+                </tr>
+                <tr>
+                    <td>Destroy de database</td>
+                    <td><button md-raised-button (click)="destroy()" #destroyDb>Execute</button></td>
+                </tr>
+
+            </md-card-content>
+        </md-card>
+
+    </div>
+    <div fxFlex="20"></div>
+</div>

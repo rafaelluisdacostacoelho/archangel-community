@@ -1,0 +1,10 @@
+﻿<div (window:scroll)="onScroll($event)" 
+    [class.color-primary]="collapsed" 
+    [class.not-collapsed]="collapsed" 
+    [class.color-secondary]="!collapsed" 
+    [class.collapsed]="!collapsed">
+    <archangel-toolbar-row>
+        <ng-content></ng-content>
+    </archangel-toolbar-row>
+    <ng-content select="archangel-toolbar-row"></ng-content>
+</div>

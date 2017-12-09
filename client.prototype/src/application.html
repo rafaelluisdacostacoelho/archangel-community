@@ -1,0 +1,19 @@
+﻿<section>
+    <!-- Animated toolbar -->
+    <archangel-toolbar>
+	    <div class="header-image margin-left"></div>
+        <archangel-toolbar-flex></archangel-toolbar-flex>
+        
+        <a routerLink="home" class="margin-right archangel-flex">Home</a>
+        <a routerLink="store" class="margin-right">Store</a>
+        <a routerLink="account/login" class="margin-right">Sign In</a>
+    </archangel-toolbar>
+    
+    <!-- Toolbar background image -->
+    <div class="archangel-overlay"></div>
+
+    <router-outlet></router-outlet>
+
+    <!-- Application footer -->
+    <archangel-footer></archangel-footer>
+</section>

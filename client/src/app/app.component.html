@@ -1,0 +1,28 @@
+<app-navigation-bar>
+    <div fxLayout="row">
+        <div fxFlex="20"></div>
+        <div fxFlex>
+            <img src="../assets/images/archangel-header.svg" />
+        </div>
+        <div fxFlex="30" class="t-a-r">
+            <app-navigation-button [routerLink]="['home']" routerLinkActive="active">
+                Home
+            </app-navigation-button>
+            <app-navigation-button [routerLink]="['sign-in']" routerLinkActive="active" *ngIf="!isSignedIn">
+                Sign In
+            </app-navigation-button>
+            <app-navigation-button *ngIf="isSignedIn" appSignOut>
+                Sign Out
+            </app-navigation-button>
+            <app-navigation-button [routerLink]="['control-panel']" *ngIf="isDevMode">
+                Development
+            </app-navigation-button>
+        </div>
+        <div fxFlex="20"></div>
+    </div>
+</app-navigation-bar>
+<div [style.height.px]="height"></div>
+<router-outlet></router-outlet>
+<app-footer>
+    <span>© Copyright 2018. Archangel Community</span>
+</app-footer>
